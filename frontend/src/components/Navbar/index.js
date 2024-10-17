@@ -1,39 +1,51 @@
-import React from 'react';
-import './navbar_style.css';
+// components/Navbar/index.js
+
+import React from "react";
+import {
+    Nav,
+    NavLink,
+    Bars,
+    NavMenu,
+    NavBtn,
+    NavBtnLink,
+} from "./NavbarElements";
 
 const Navbar = () => {
     return (
-  
-  <nav className="navbar">
-    <div className="navbar-left">
-      <a href="/" className="logo">
-        ShopNow
-      </a>
-    </div>
-    <div className="navbar-center">
-      <ul className="nav-links">
-        <li>
-          <a href="/products">Products</a>
-        </li>
-        <li>
-          <a href="/about">About Us</a>
-        </li>
-        <li>
-          <a href="/contact">Contact</a>
-        </li>
-      </ul>
-    </div>
-    <div className="navbar-right">
-      <a href="/cart" className="cart-icon">
-        <i className="fas fa-shopping-cart"></i>
-        <span className="cart-count">0</span>
-      </a>
-      <a href="/account" className="user-icon">
-        <i className="fas fa-user"></i>
-      </a>
-    </div>
-  </nav>
-  );
-  };
-  
-  export default Navbar;
+        <>
+            <Nav>
+                <Bars />
+
+                <NavMenu>
+                    <NavLink to="/" >
+                        Option1
+                    </NavLink>
+                    <NavLink to="/events" activeStyle>
+                        Option2
+                    </NavLink>
+                    <NavLink to="/annual" activeStyle>
+                        Option3
+                    </NavLink>
+                    <NavLink to="/team" activeStyle>
+                        Option4
+                    </NavLink>
+                    <NavLink to="/blogs" activeStyle>
+                        Option5
+                    </NavLink>
+                    <NavLink to="/sign-up" activeStyle>
+                        Sign Up
+                    </NavLink>
+                    {/* Second Nav */}
+                    {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
+                </NavMenu>
+                <NavBtn>
+                    <NavBtnLink to="/signin">
+                        Sign In
+                    </NavBtnLink>
+                </NavBtn>
+            </Nav>
+        </>
+    );
+};
+
+export default Navbar;
