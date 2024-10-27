@@ -1,51 +1,21 @@
-// components/Navbar/index.js
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import "./style.css"
 
-import React from "react";
-import {
-    Nav,
-    NavLink,
-    Bars,
-    NavMenu,
-    NavBtn,
-    NavBtnLink,
-} from "./NavbarElements";
-
-const Navbar = () => {
+function MyNavbar() {
     return (
-        <>
-            <Nav>
-                <Bars />
+        <Navbar bg="light" data-bs-theme="light">
+            <Container>
+                <Nav classname="me.auto">
+                    <Nav.Link href="/" activeStyle>About Me</Nav.Link>
+                    <Nav.Link href="/certifications">Certifications</Nav.Link>
+                    <Nav.Link href="/projects">Projects</Nav.Link>
+                    <Nav.Link href="/work">Work Experiences</Nav.Link>
+                </Nav>
+            </Container>
+        </Navbar>
+    )
+}
 
-                <NavMenu>
-                    <NavLink to="/" >
-                        Option1
-                    </NavLink>
-                    <NavLink to="/events" activeStyle>
-                        Option2
-                    </NavLink>
-                    <NavLink to="/annual" activeStyle>
-                        Option3
-                    </NavLink>
-                    <NavLink to="/team" activeStyle>
-                        Option4
-                    </NavLink>
-                    <NavLink to="/blogs" activeStyle>
-                        Option5
-                    </NavLink>
-                    <NavLink to="/sign-up" activeStyle>
-                        Sign Up
-                    </NavLink>
-                    {/* Second Nav */}
-                    {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
-                </NavMenu>
-                <NavBtn>
-                    <NavBtnLink to="/signin">
-                        Sign In
-                    </NavBtnLink>
-                </NavBtn>
-            </Nav>
-        </>
-    );
-};
-
-export default Navbar;
+export default MyNavbar;
