@@ -9,9 +9,7 @@ function MyNavbar() {
             <Container>
                 <Nav classname="me.auto">
                     <Nav.Link href="/" activeStyle>About Me</Nav.Link>
-                    <Nav.Link href="/certifications">Certifications</Nav.Link>
                     <Nav.Link href="/projects">Projects</Nav.Link>
-                    <Nav.Link href="/work">Work Experiences</Nav.Link>
                 </Nav>
             </Container>
         </Navbar>

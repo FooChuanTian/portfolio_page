@@ -14,6 +14,7 @@ function App() {
   return (
     <Router>
       <MyNavbar />
+      <br />
       <Routes>
         <Route path='/' element={<AboutMe />} ></Route>
         <Route path='/certifications' element={<Certifications />}></Route>

@@ -2,25 +2,49 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import PictureCarousel from "../PictureCarousel";
+import Card from 'react-bootstrap/Card';
+import CardGroup from 'react-bootstrap/CardGroup';
+import ListGroup from 'react-bootstrap/ListGroup';
 import "./style.css";
+import ListGroupItem from 'react-bootstrap/esm/ListGroupItem';
 
 
 function ProjectModule({ props }) {
     console.log(props.images);
     return (
-        <Container class="courier">
-            <Row>
-                <h1>{ props.title }</h1>
-            </Row>
-            <Row>
-                <Col xs={12} md={8}>
-                    <PictureCarousel images={ props.images } />
-                </Col>
-                <Col xs={6} md={4}>
-                    { props.description }
-                </Col>
-            </Row>
-            <hr />
+        <Container>
+            <Card bg='light'>
+                <Card.Body>
+                    <Row>
+                        <Card.Title><h2>{ props.title }</h2></Card.Title>
+                    </Row>
+                    <Row>
+                        <Card.Subtitle>{ props.module }</Card.Subtitle><br />
+                    </Row>
+                    <Row>
+                        <Col xs={12} md={8}>
+                            <PictureCarousel images={ props.images } />
+                        </Col>
+                        <Col xs={12} md={4}>
+                        <ListGroup className="list-group-flush">
+                            <ListGroupItem>
+                            <strong>Description</strong> <br />
+                            { props.description }
+                            </ListGroupItem>
+                            <ListGroupItem>
+                                <strong>Responsibilities</strong>
+                                <ul>
+                                {props.responsibilities.map((res) => (
+                                    <li>{ res }</li>
+                                ))}
+                                </ul>
+                            </ListGroupItem>
+                        </ListGroup>
+                        </Col>
+                    </Row>
+                </Card.Body>
+            </Card>
+            <br />
         </Container>
     )
 };

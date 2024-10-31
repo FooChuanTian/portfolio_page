@@ -1,6 +1,7 @@
 import React from 'react';
-import { Carousel } from "react-responsive-carousel";
+import Carousel from 'react-bootstrap/Carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import "./style.css";
 /*
 const images = [
     "./images/dti_1.jpg",
@@ -11,12 +12,12 @@ const images = [
 
 function PictureCarousel({ images }) {
     return (
-        <div className="box">
-            <Carousel useKeyboardArrows={true}>
+        <div>
+            <Carousel>
                 {images.map((URL, index) => (
-                <div className="slide">
+                <Carousel.Item>
                     <img alt="sample_file" src={URL} key={index} />
-                </div>
+                </Carousel.Item>
                 ))}
             </Carousel>
         </div>
