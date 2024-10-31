@@ -1,0 +1,46 @@
+[   
+    {
+        "title": "Hotel Booking Web App",
+        "module": "50.003 - Elements of Software Construction (2024)",
+        "tools": ["React JS", "Express JS", "MongoDB"],
+        "description": "Partnering with the company Ascenda, my team created a web application for booking hotels using the MERN stack.",
+        "images": ["./images/esc_1.jpg", "./images/esc_2.jpg", "./images/esc_3.jpg", "./images/esc_4.jpg", "./images/esc_5.jpg", "./images/esc_6.jpg", "./images/esc_8.jpg", "./images/esc_7.jpg"],
+        "responsibilities": ["Implemented backend of web application to retrieve data from MongoDB database, including customer data and hotel data", "Integrated backend with an API from Ascenda that allowed our web application to access information of hotels from around the world.", "Implemented end-to-end testing using Selenium for creating a new booking.", "Used MailerSend API to send confirmation emails of a person's booking after the booking was completed."]
+    },
+
+    {
+        "title": "FPGA Mastermind Game",
+        "module": "50.002 - Computation Structures (2024)",
+        "tools": ["Test"],
+        "description": "A version of Mastermind created using the Alchitry Io FPGA board and the Lucid hardware description language.",
+        "images": ["./images/comstruct_1.jpg", "./images/compstruct_3.jpg", "./images/compstruct_4.jpg", "./images/compstruct_5.jpg"],
+        "responsibilities": ["Helped to implement the game's design into Lucid code.", "Implemented a random number generator that randomised the sequence of colours for each round of the game."]
+    },
+
+    {
+        "title": "Android App for Booking Tours: WayFare",
+        "module": "50.001 - Introduction to Information Systems & Programming (2024)",
+        "tools": ["Test"],
+        "description": "Tours are often run by large tour companies. Independent tour guides therefore find it hard to compete if they conducted tours on their own. Seeing this gap, my team created a tour-booking app to empower smaller tour operators to be able to compete with larger, more established tour companies.",
+        "images": ["./images/infosys_1.jpg", "./images/infosys_2.jpg", "./images/infosys_3.jpg", "./images/infosys_4.jpg", "./images/infosys_5.jpg", "./images/infosys_6.jpg"],
+        "responsibilities": ["Helped to implement the frontend of the interface to create a new tour listing"]
+    },
+
+    {
+        "title": "CTRL ALT TOWER",
+        "module": "03.007 - Design Thinking and Innovation (2023)",
+        "tools": ["LLM", "Python"],
+        "description": "Centered around the theme of 'Glow 1.0', my team designed and built a navigational tower inspired by Changi Airport's iconic control tower to be placed in the area outide Changi City Point. We made use of ChatGPT's API to create a chatbot that can control the LED strips on the tower, pointing visitors to where they need to go by simply asking the chatbot.",
+        "images": ["./images/dti_1.jpg", "./images/dti_2.jpg", "./images/dti_3.jpg", "./images/dti_6.jpg", "./images/dti_7.jpg", "./images/dti_8.jpg", "./images/dti_4.jpg", "./images/dti_5.jpg", "./images/dti_10.jpg"],
+        "responsibilities": ["Used ChatGPT's API to create a chatbot that is able to give directions in the area around Changi City Point.", "Used MicroPython on the ESP32 to interpret outputs from the chatbot to control the LED strips surrounding the tower such that only the LED strip facing the direction of desired location lit up.", "Helped with the ideation of the solution, including creating diagrams and sketches of possible ideas.", "Helped with the 3D printing and construction of the final tower and the miniature mockup.", "Edited the final video for this project."]
+    },
+
+    {
+        "title": "Capture-The-Flag Python Game",
+        "module": "10.014 - Computational Thinking for Design (2022)",
+        "tools": ["Test"],
+        "description": "A game where players have to decrypt flags from 3 different challenges in order to put them together to form a sentence. These challenges test their abilities in decrypting text encrypted using caesar cipher, as well as in decoding text encoded in binary and morse code.",
+        "images": ["./images/ctd_1.jpg", "./images/ctd_2.jpg", "./images/ctd_3.jpg"],
+        "responsibilities": ["Implemented the main GUI of the game using Tkinter.", "Implemented the Morse Code decoding challenge using winsound python library.", "Helped with the ideation process for this project.", "Helped with writing documentation for the overall application."]
+    }
+]
