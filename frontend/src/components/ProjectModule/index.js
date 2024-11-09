@@ -7,10 +7,13 @@ import CardGroup from 'react-bootstrap/CardGroup';
 import ListGroup from 'react-bootstrap/ListGroup';
 import "./style.css";
 import ListGroupItem from 'react-bootstrap/esm/ListGroupItem';
+import Button from 'react-bootstrap/Button';
+import { FaGithub, FaYoutube } from "react-icons/fa"
 
 
 function ProjectModule({ props }) {
-    console.log(props.images);
+    let gitHubExist = "github" in props;
+    let youTubeExist = "youtube" in props;
     return (
         <Container>
             <Card bg='light'>
@@ -39,6 +42,12 @@ function ProjectModule({ props }) {
                                 ))}
                                 </ul>
                             </ListGroupItem>
+                            
+                                {gitHubExist ? (
+                                <ListGroupItem>
+                                    <Button variant='light' href={ props.github } target='_blank'><FaGithub /> GitHub Repository </Button>
+                                </ListGroupItem>
+                                ) : (null)}
                         </ListGroup>
                         </Col>
                     </Row>

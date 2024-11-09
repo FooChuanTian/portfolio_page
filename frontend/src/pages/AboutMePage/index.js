@@ -9,6 +9,22 @@ import Button from 'react-bootstrap/Button';
 import { FaLinkedin, FaGithub, FaBook } from "react-icons/fa"
 
 function AboutMe(){
+    const [lang, setLang] = useState(null);
+    const [txtbody, setTxtBody] = useState(null);
+    useEffect(() => {
+        async function fetchProjects() {
+            let response = await fetch('./txt_information/aboutme-en.json');
+            response = await response.json();
+            console.log(response);
+            setTxtBody(response);
+        }
+        fetchProjects();
+    }, []);
+
+    if (!txtbody) {
+        return (<p>Loading...</p>);
+    }
+
     return (
         <Container>
             <h2>About Me</h2>
@@ -19,7 +35,7 @@ function AboutMe(){
                     <Card.Img src="./images/oredesu.jpeg" />
                 </Col>
                 <Col xs={12} md={8}>
-                    <p>I am a third-year undergraduate at the Singapore University of Technology and Design with plans to major in Computer Science. I am currently serving as the Treaurer of SUTD Drama Club and also work part-time at iTrust in SUTD as a Student Assistant. I am passionate about information security and how it continues to evolve in the face of new technological and geopolitical challenges. In my spare time, I enjoy learning Japanese.</p>
+                    <p>{ txtbody.aboutme }</p>
                 </Col>
             </Row>
             <ListGroup>
