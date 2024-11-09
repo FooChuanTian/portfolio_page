@@ -37,7 +37,7 @@
         "responsibilities": ["Used ChatGPT's API to create a chatbot that is able to give directions in the area around Changi City Point.", "Used MicroPython on the ESP32 to interpret outputs from the chatbot to control the LED strips surrounding the tower such that only the LED strip facing the direction of desired location lit up.", "Helped with the ideation of the solution, including creating diagrams and sketches of possible ideas.", "Helped with the 3D printing and construction of the final tower and the miniature mockup.", "Edited the final video for this project."],
         "youtube": [
             {"title": "Introduction Video", "link": "https://youtu.be/nQFm1pYI6C0"},
-            {"title": "Chatbot GUI Demonstration", "link": "https://youtu.be/NeIRIBHysfM"}
+            {"title": "Chatbot GUI Demonstration", "link": "https://youtu.be/iey35Fx1lYg"}
         ]
     },
 

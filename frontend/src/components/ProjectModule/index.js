@@ -48,6 +48,14 @@ function ProjectModule({ props }) {
                                     <Button variant='light' href={ props.github } target='_blank'><FaGithub /> GitHub Repository </Button>
                                 </ListGroupItem>
                                 ) : (null)}
+
+                                {youTubeExist ? (
+                                    props.youtube.map((vid) => (
+                                        <ListGroupItem>
+                                            <Button variant='light' href={ vid.link } target='_blank'><FaYoutube /> { vid.title } </Button>
+                                        </ListGroupItem>
+                                    ))
+                                ) : (null)}
                         </ListGroup>
                         </Col>
                     </Row>
