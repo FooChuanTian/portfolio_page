@@ -6,7 +6,13 @@
         "description": "Partnering with the company Ascenda, my team created a web application for booking hotels using the MERN stack.",
         "images": ["./images/esc_1.jpg", "./images/esc_2.jpg", "./images/esc_3.jpg", "./images/esc_4.jpg", "./images/esc_5.jpg", "./images/esc_6.jpg", "./images/esc_8.jpg", "./images/esc_7.jpg"],
         "responsibilities": ["Implemented backend of web application to retrieve data from MongoDB database, including customer data and hotel data", "Integrated backend with an API from Ascenda that allowed our web application to access information of hotels from around the world.", "Implemented end-to-end testing using Selenium for creating a new booking.", "Used MailerSend API to send confirmation emails of a person's booking after the booking was completed."],
-        "github": "https://github.com/100sonly/C5G5Ascenda"
+        "github": "https://github.com/100sonly/C5G5Ascenda",
+        "youtube": [
+            {"title": "Project Meeting 1", "link": "https://youtu.be/EGDz4VvFNpc"},
+            {"title": "Project Meeting 2", "link": "https://youtu.be/HFAeR_v1DYw"},
+            {"title": "Project Meeting 3", "link": "https://youtu.be/C9vKCByMENI"},
+            {"title": "Final Video", "link": "https://youtu.be/EZ47lVA14dY"}
+        ]
     },
 
     {
@@ -25,7 +31,10 @@
         "description": "Tours are often run by large tour companies. Independent tour guides therefore find it hard to compete if they conducted tours on their own. Seeing this gap, my team created a tour-booking app to empower smaller tour operators to be able to compete with larger, more established tour companies.",
         "images": ["./images/infosys_1.jpg", "./images/infosys_2.jpg", "./images/infosys_3.jpg", "./images/infosys_4.jpg", "./images/infosys_5.jpg", "./images/infosys_6.jpg"],
         "responsibilities": ["Helped to implement the frontend of the interface to create a new tour listing"],
-        "github": "https://github.com/cthdarren/WayFare"
+        "github": "https://github.com/cthdarren/WayFare",
+        "youtube": [
+            {"title": "App Features Demonstration", "link": "https://youtu.be/15bcmkTfwOQ"}
+        ]
     },
 
     {
@@ -48,6 +57,9 @@
         "description": "A game where players have to decrypt flags from 3 different challenges in order to put them together to form a sentence. These challenges test their abilities in decrypting text encrypted using caesar cipher, as well as in decoding text encoded in binary and morse code.",
         "images": ["./images/ctd_1.jpg", "./images/ctd_2.jpg", "./images/ctd_3.jpg"],
         "responsibilities": ["Implemented the main GUI of the game using Tkinter.", "Implemented the Morse Code decoding challenge using winsound python library.", "Helped with the ideation process for this project.", "Helped with writing documentation for the overall application."],
-        "github": "https://github.com/FooChuanTian/10.014-CTD-1D-Project"
+        "github": "https://github.com/FooChuanTian/10.014-CTD-1D-Project",
+        "youtube": [
+            {"title": "Game Demonstration", "link": "https://youtu.be/7nUrP5JAOJo"}
+        ]
     }
 ]
